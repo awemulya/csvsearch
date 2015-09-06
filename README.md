@@ -2,38 +2,36 @@
 #assignment work
  ### Set up
  '''
-takes input from form and searches input in csv file
+#takes input from form and searches input in csv file
 
-#installing pip
 
-sudo yum install python-pip #fedora
 
-sudo apt-get install python-pip #ubuntu
+sudo yum install python-pip #fedora installing pip
 
-#virtualenvironment
+sudo apt-get install python-pip #ubuntu installing pip
 
-pip install virtualenv
+
+
+pip install virtualenv #virtualenvironment
 
 #creating new environment from virtualenvironment
 
-virtualenv csvenv
+virtualenv csvenv #this creates new environment name csvenv
 
-#this creates new environment name csvenv
+source csvenv/bin/activate #activate the environment
 
-#activate the environment
+  pip install -r requirements.txt #install requirements from requirements.txt
+'''
 
-source csvenv/bin/activate
+###
+'''
 
-#install requirements from requirements.txt
 
-  pip install -r requirements.txt
+ git clone git@github.com:manamulya/csvsearch.git # pull repository
 
-# pull repository
- git clone git@github.com:manamulya/csvsearch.git
 
-#go to project directory
 
-  cd csvsearch/
+  cd csvsearch/ #go to project directory
 
 # run project
 
@@ -41,8 +39,8 @@ python manage.py migrate
 
 python manage.py runserver
 
-#browse
- http://localhost:8000/home/
+
+ http://localhost:8000/home/ #browse
 
 '''
 
