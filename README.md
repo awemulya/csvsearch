@@ -1,6 +1,7 @@
 # csvsearch
 #assignment work
-
+ ### Set up
+ '''
 takes input from form and searches input in csv file
 
 #installing pip
@@ -43,6 +44,6 @@ python manage.py runserver
 #browse
  http://localhost:8000/home/
 
- ENJOY
+'''
 
 
