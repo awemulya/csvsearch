@@ -5,6 +5,28 @@
     <title></title>
 </head>
 <body>
-this is home
+<h2> {{message}}</h2>
+<form name="searchDataForm" action="{% url 'home' %}" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="firstname"> Firstname </label>
+        <input type="text" id="firstname" name="firstname" placeholder="First Name">
+    </div>
+    <div>
+        <label for="lastname"> Lastname </label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+    </div>
+    <div>
+        <label for="phone"> Phone NO </label>
+        <input type="text" id="phone" name="phone" placeholder="Phone NO">
+    </div>
+    <div>
+        <label for="address"> Addtess </label>
+        <input type="text" id="address" name="address" placeholder="Address">
+    </div>
+    <div>
+        <input type="submit" name="submit" value="Search"></div>
+    </div>
+</form>
 </body>
 </html>

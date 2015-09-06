@@ -17,5 +17,5 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'', include("searchdata.urls")),
+    url(r'', include('searchdata.urls')),
 ]
