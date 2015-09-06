@@ -28,6 +28,8 @@ source csvenv/bin/activate
   pip install -r requirements.txt
 
 # pull repository
+ git clone git@github.com:manamulya/csvsearch.git
+
 #go to project directory
 
   cd csvsearch/
